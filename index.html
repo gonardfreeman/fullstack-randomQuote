@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <title>Random Quotes</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="animate.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 <!--<button id="STOP">TEST STOP</button>-->
 <div class="out">
     <div class="quote">
-        <div class="quote__text" id="text"></div>
-        <div id="title" style="display: none;"></div>
+        <div class="quote__text tlt" id="text" data-in-effect="fadeInLeft" data-out-effect="rollOut"></div>
+        <div id="title" data-in-effect="fadeInLeft" data-out-effect="rollOut"></div>
         <div class="quote__footer">
-            <div class="share">TWITTER</div>
+            <div class="share"><a href="#" id="tweet">TWITTER</a></div>
             <div class="take__new"><a href="#" id="new_click">NEW QUOTE</a></div>
         </div>
     </div>
 </div>
-    <!--<div id=d>HELLO WORLD</div>-->
-    <script src="jquery-3.1.1.min.js"></script>
-    <script src="app.js"></script>
+<!--<div id=d>HELLO WORLD</div>-->
+<!--<script src="app.js"></script>-->
+<script src="jquery-3.1.1.min.js"></script>
+<script src="jquery.lettering.js"></script>
+<script src="jquery.textillate.js"></script>
+<script src="new_app.js"></script>
 
 </body>
 </html>
